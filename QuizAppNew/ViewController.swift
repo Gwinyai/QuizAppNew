@@ -35,6 +35,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! QuizResultsViewController
         destinationVC.score = score
+        destinationVC.questionsCount = questions.count
     }
     
     override func viewDidLoad() {
